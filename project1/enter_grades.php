@@ -57,14 +57,33 @@ $conn->close();
                     <?php endwhile; ?>
                 </select>
             </div>
-            <div class="form-group">
-                <label for="grade">Ocena:</label>
-                <input type="number" class="form-control" id="grade" name="grade" required>
-            </div>
-            <div class="form-group">
-                <label for="subject">Przedmiot:</label>
-                <input type="text" class="form-control" id="subject" name="subject" required>
-            </div>
+			<div class="form-group">
+				<label for="grade">Ocena:</label>
+				<input type="number" class="form-control" id="grade" name="grade" required min="1" max="6">
+			</div>
+			<div class="form-group">
+				<label for="subject">Przedmiot:</label>
+				<select class="form-control" id="subject" name="subject" required>
+					<option value="biologia">Biologia</option>
+					<option value="chemia">Chemia</option>
+					<option value="edukacja_dla_bezpieczenstwa">Edukacja dla Bezpieczeństwa</option>
+					<option value="edukacja_wczesnoszkolna">Edukacja Wczesnoszkolna</option>
+					<option value="fizyka">Fizyka</option>
+					<option value="geografia">Geografia</option>
+					<option value="historia">Historia</option>
+					<option value="informatyka">Informatyka</option>
+					<option value="jezyk_obcy_nowozytny">Język Obcy Nowożytny</option>
+					<option value="drugi_jezyk_obcy_nowozytny">Drugi Język Obcy Nowożytny</option>
+					<option value="jezyk_polski">Język Polski</option>
+					<option value="matematyka">Matematyka</option>
+					<option value="muzyka">Muzyka</option>
+					<option value="plastyka">Plastyka</option>
+					<option value="przyroda">Przyroda</option>
+					<option value="technika">Technika</option>
+					<option value="wiedza_o_spoleczenstwie">Wiedza o Społeczeństwie</option>
+					<option value="wychowanie_fizyczne">Wychowanie Fizyczne</option>
+				</select>
+			</div>
             <button type="submit" class="btn btn-primary btn-block">Dodaj Ocenę</button>
         </form>
     </div>
